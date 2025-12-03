@@ -1,0 +1,664 @@
+
+
+
+
+
+body{
+background-color: var(--bg-principal);
+ 
+ 
+}
+
+*{
+   
+   scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+                              /* ====================== header ====================== */
+
+
+header{
+   
+    background-image: url(image/arbre.jpeg);
+     height: 70vh;
+    background-color: var(--bg-sombre);
+    background-position: center ;  /* sinon on ne voit pas la tete du mr  donc */
+    background-size:cover;
+    
+    
+}
+
+
+
+.slider{
+    padding-right: 30px;    /* comme ca les liens ne sont pas coller a droite */
+    background-color: var(--bg-transparent);
+    display: flex;    /* ca doit etre en flex car je vais diviser la partie en deux  la nav et le texte h2*/
+    justify-content: space-between; /* pour que les deux txtes soient aux extrémité ( autrement jaurais mis center ou space-around  */
+    align-items: center;
+    height: 10vh; /* la taille de la barre de nav  */
+}
+
+
+
+.slider ul {
+    display: flex; /* pour que je puisse aligné les liens a l'horizental et les centré ect ect ...*/
+    gap: 20px;   /* pour les separé de vignt pixels  */
+    list-style: none;
+
+}
+
+
+
+
+.slider a{
+    display: inline-block;  /* pour faire l'effet zoom*/
+    font-weight: bold;
+    font-size: 1.5em; 
+    font-family: var(--font-texte); 
+    color: var(--txt-blanc);
+    text-decoration: none;
+    transition: 0.4s;   /* pour que l'effet ne soit pas agresive  */
+}
+
+
+.slider a:hover{
+    transform: scale(1.1); /* l'effet zoom justement  */
+    color: var(--violet-hover);
+}
+
+
+.text h2{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    font-family: var(--font-texte);
+    color: var(--txt-blanc);
+    
+}
+
+
+
+.titre{
+    flex-direction: column;
+    display: flex;           /*pour gerer les texte en bas comme je le shouaite */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  
+
+
+}
+
+
+
+.titre h1{
+
+
+
+    text-transform: uppercase;     /*ca mets le texte en majuscule */
+    font-family: var(--font-titre);
+    font-weight: bolder; /* très épais */
+    text-align: center; /* centré */
+    color: var(--txt-blanc);
+    font-size: 2vw;
+}
+
+
+
+.titre p{
+    font-family: var(--font-texte);
+    font-size: 1.2vw;
+    color: var(--txt-blanc);
+}
+
+
+
+
+
+
+
+
+
+                              /* ====================== main ====================== */
+
+
+
+
+.bloc1 {
+   
+    padding: 2vw;   /* pour eviter que le texte ne soit trop coller a au autre compartiment  */
+    align-items: start;
+    display: flex;
+    height: 20vh;
+    color: var(--txt-titre);
+}
+.services{
+    font-style: italic;
+    font-size: 2vw;
+    flex: 1;
+    font-weight: bolder;
+    font-family: var(--font-titre);
+    
+
+}
+
+
+
+.moi{
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 1.2vw;
+    font-family: var(--font-texte); 
+    flex: 2;
+    transition: 0.4s;
+    color: var(--txt-corps);
+    
+}
+
+
+
+.moi:hover{
+transform: translateY(-5px);
+box-shadow: 0 0 18px var(--violet-hover);
+}
+
+
+
+
+
+
+
+.dark{     /*bloc pricipale */
+display: flex;       /* pour que le bloc parent sois diviser en deux enfant dans la direction que je veux */
+
+}
+
+
+.competences{  /*premier enfant */
+flex: 1;
+padding: 2vw;
+display: flex;
+align-items: center;
+font-family: var(--font-titre);
+font-weight: bolder;
+font-style: oblique;
+font-size: 2vw;
+color: var(--txt-titre);
+
+
+}
+
+
+.tableau{     /*deuxieme enfant , qui est lui meme un parent , cest le parent des 4 enfants ( cc , c, java, python ) */
+gap: 50px ;
+
+display: flex;
+padding: 2vw;
+flex: 3;
+align-items: center;
+
+
+
+}
+.cc{ 
+
+border-radius: 30px;
+flex: 1;
+background-color: var(--bg-elements);
+
+
+}
+
+.c{
+flex: 1;
+border-radius: 30px;
+background-color: var(--bg-elements);
+
+
+}
+
+.python{
+flex: 1;
+border-radius: 30px;
+background-color: var(--bg-elements);
+
+
+
+
+
+}
+
+.java{
+flex: 1;
+border-radius: 30px;
+background-color: var(--bg-elements);
+
+
+
+
+
+}
+.tableau img {      /*c pour centrer les images */
+width: 100%;
+height: 100%;
+object-fit: contain;
+
+
+
+
+}
+
+.tableau h3 {
+color: var(--txt-titre);
+text-align: center;
+
+
+
+}
+.tableau div{      /*pour les effets */
+display: inline-block;
+transition: 0.4s;
+
+
+
+}
+
+
+.tableau div:hover{      /*pour les effets */
+
+transform: scale(1.1);
+
+
+}
+
+
+.projets{
+text-align: center;
+margin-top:  3vw;
+font-family: var(--font-titre);
+font-weight: bolder;
+font-style: oblique;
+font-size: 2em;
+color: var(--txt-titre);
+
+
+
+
+}
+
+
+
+
+
+
+
+  
+.grille{            /*ca c le bloc principale */
+justify-content: center;
+padding: 2vw;
+
+display: grid;
+grid-template-columns:  300px 300px 300px 300px ;
+grid-template-rows: 200px 200px ;
+gap: 30px;
+
+}
+
+
+
+
+.grille div {     /*ca c  pour centrer le text au bloc  */  
+text-align: center;
+color: var(--txt-titre);
+
+}
+
+.description{  /*ca c pour que le bloc prenne deux cases */
+
+grid-column: 1;
+grid-row: 1 /span 2;
+
+}
+
+.reseaux{   /*ca c pour que le bloc prenne deux cases */
+grid-column: 4;
+grid-row: 1 / span 2;
+
+}
+
+.grille  div img { /*reglages des images */
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 15px;
+filter: brightness(40%);
+transition: 0.4s;
+
+}
+
+
+
+
+.grille img:hover {
+filter: brightness(100%);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+#D {       /* ca c pour le style  jai pas voulu le mettre dans leur classe respective ( despcription et reseaux )  pour des questiions dorganisation */
+transition: 0.4s;
+font-style: serif ;
+font-weight: bolder;
+font-family: var(--font-texte); 
+border-radius: 15px;
+text-align: start;
+font-size: 1.1em;
+color: var(--txt-corps);
+
+
+
+}
+
+#D:hover{
+box-shadow: 0 0 18px var(--violet-hover);
+transform: translateY(-5px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                /* ================= PARCOURS  ================= */
+
+
+
+
+
+
+
+/* Le titre */
+.titre-parcours {
+    text-align: center;
+    margin-top: 3vw;
+    font-family: var(--font-titre);
+    font-size: 2em;
+    color: var(--txt-titre);    
+}
+
+/* Le conteneur qui tient toutes les boites */
+.liste-ecoles {
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;
+    gap: 20px;              
+    padding: 20px;
+}
+
+/* Le style de chaque boite  */
+.ecole {
+
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+    gap: 5px;              
+    padding: 20px;            
+    color: var(--txt-titre);          
+    align-items: center;     
+    border-left: 5px solid var(--violet-main); 
+    border-radius: 15px; 
+    background: linear-gradient(145deg, rgba(55, 55, 55, 0.9), rgba(24, 24, 24, 0.9));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5); 
+    transition: 0.4s;
+
+
+
+
+}
+
+
+.ecole:hover {
+ transform: translateX(20px); /* Petit décalage vers la droite */
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+.ecole h4 {
+    font-size: 1.3em;
+    color: var(--txt-blanc); 
+}
+
+.duree {
+  
+    background-color: white ;
+    color: #000;
+    padding-right:5px ;
+    padding-left:5px ;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fin{              /*le dernier titre de ma page */
+padding-top: 2vw;
+text-align: center;
+font-family: var(--font-titre);
+font-weight: bolder;
+font-style: oblique;
+font-size: 2em;
+color: var(--txt-titre);
+
+
+}
+
+
+
+
+
+.contacte{       /*bloc principale de mon formulaire */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+.partie1{   /* le bloc du formulaire */
+width: 60vw;
+height: auto;
+color: #eeeeee;
+padding:5px;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+transition: 0.4s;
+
+
+
+}
+.partie1:hover{
+box-shadow: 0 0 18px var(--violet-hover);
+transform: translateY(-5px);
+
+}
+
+
+
+input, textarea ,select {   /* c pour gerer lespae dans les barres de recherche (  ou on insert les info ) */
+    color: #eeeeee;
+    padding:5px;
+    background-color: var(--bg-input); 
+    border-radius: 10px;
+    font-size: large;
+    font-family: var(--font-texte); 
+}
+textarea{
+    width: 98%;
+}
+
+button{ /* reglage du boutton */
+color: aliceblue;
+background-color: #2f2f2f;
+border-radius: 10px;
+padding:2px;
+margin: 2px;
+width: 200px;
+
+}
+
+
+
+
+
+
+                             /* ====================== footer ====================== */
+
+
+footer{       /* bloc princale du footer */
+color: #bcbcbcf2;
+ background-color: var(--bg-transparent);
+font-family: var(--font-texte); 
+
+
+}
+
+.box{
+padding: 15px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+}
+
+
+
+.box a {
+color: #f2f2f2;
+text-decoration: none;
+
+
+
+}
+
+.box2{
+text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= responsv================= */
+@media (max-width: 1024px){
+
+    /*  On mets tout a la verticale  */
+    .slider, 
+    .bloc1, 
+    .dark {
+        padding: 1rem;
+        flex-direction: column; 
+        height: auto;/* On laisse la hauteur s'adapter au contenu */
+        padding: 20px;         
+    }
+
+    
+    .grille {
+        height: auto;
+        display: flex;          /* On passe en flex pour empiler simplement */
+        flex-direction: column; 
+        gap: 20px;
+    }
+    
+    .titre{
+
+        height: auto;
+    }
+    
+    .titre h1 { 
+        font-size: 8vw; 
+    } 
+
+
+    .titre p { 
+        font-size: 4vw; 
+    }
+
+
+
+    .services, .moi, .competences, .projets { 
+        font-size: 1.2rem; 
+    }
+    .partie1{
+        height: auto;
+    }
+
+
+
+
+  
+}

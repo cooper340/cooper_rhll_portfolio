@@ -1,0 +1,23 @@
+:root {
+    /* --- COULEURS --- */
+    --bg-principal: #171717;
+    --bg-sombre: black;
+    --bg-transparent: rgba(0 , 0 , 0 , 0.5 );
+    --bg-elements: rgba(106, 99, 99, 0.5); /* Pour les  bulles compétences */
+    --bg-input: #2f2e2f;
+
+    --txt-titre: #F0F0F0;  /* couleur titre  */
+    --txt-corps: #cfcccc;  /* couleur text */
+    --txt-blanc: #ffffff;
+    
+    --violet-main: #8e2de2;
+    --violet-hover:  rgba(142, 45, 226, 0.8);
+    
+    
+    
+    --font-titre: 'Pacifico', cursive; /* police titre */
+    
+    
+    --font-texte: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;  /* police txt */
+}
+
